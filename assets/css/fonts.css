@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, body>header>div>span {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 1000;
+}
+
+code {
+    font-family: "Roboto Mono";
+}

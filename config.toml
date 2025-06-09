@@ -1,0 +1,5 @@
+baseURL = "https://navigating-data-errors.github.io/"
+languageCode = "en-us"
+title = "SIGMOD 2025 Tutorial: Navigating Data Errors in Machine Learning Pipelines: Identify, Debug, and Learn"
+theme = "cotton-sky"
+

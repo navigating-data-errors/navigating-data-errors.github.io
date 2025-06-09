@@ -1,0 +1,3 @@
+[submodule "themes/cotton-sky"]
+	path = themes/cotton-sky
+	url = https://github.com/bojan-karlas/cotton-sky.git
