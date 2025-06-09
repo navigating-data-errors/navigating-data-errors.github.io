@@ -12,10 +12,12 @@ sections:
     - title: References
       partial: list
       content:
-        resource: references.yaml
+        data: references.yaml
       params:
         header:
           field: group
         grouped: true
         showShortref: true
+        showYearAfterVenue: true
+        hideVenueTag: true
 ---

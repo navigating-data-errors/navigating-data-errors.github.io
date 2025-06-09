@@ -19,14 +19,14 @@ img.publication {
         --color-backplate: rgb(72, 72, 72);
         --color-foreground: rgb(255, 255, 255);
         --color-highlight: rgb(166, 166, 166);
-        --color-shadow: rgba(255, 255, 255, 0.4);
+        --color-shadow: rgba(255, 255, 255, 0.2);
         --color-soft: rgb(226, 226, 226);
         --color-primary: rgb(233, 54, 42);
     }
 
     img {
-        /* filter: drop-shadow(0.1em -0.1em 0.3em var(--color-shadow)); */
-        /* background-color: var(--color-foreground); */
+        filter: drop-shadow(0.1em -0.1em 0.5em var(--color-shadow));
+        background-color: var(--color-foreground);
         opacity: 0.9;
     }
 }

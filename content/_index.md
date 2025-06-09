@@ -36,6 +36,9 @@ sections:
         header:
           field: group
         grouped: true
+        showYearAfterVenue: true
+        hideVenueTag: true
+
 links:
   - icon: fa-solid fa-file-lines
     href: https://deem.berlin/pdf/icde-tutorial-navigating-data-errors-in-ml-pipelines.pdf
