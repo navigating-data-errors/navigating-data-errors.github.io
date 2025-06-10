@@ -1,0 +1,1249 @@
+- bibTeX: "@article{krishnan2016activeclean, 
+    \ title={Activeclean: Interactive data cleaning for statistical modeling},
+    \ author={Krishnan, Sanjay and Wang, Jiannan and Wu, Eugene and Franklin, Michael J and Goldberg, Ken},
+    \ journal={Proceedings of the VLDB Endowment},
+    \ volume={9},
+    \ number={12},
+    \ pages={948--959},
+    \ year={2016},
+    \ publisher={VLDB Endowment}
+    \ }"
+  title: 'ActiveClean: Interactive Data Cleaning For Statistical Modeling'
+  authors:
+  - S Krishnan
+  - J Wang
+  - E Wu
+  - MJ Franklin
+  - K Goldberg
+  abstract: |
+    Analysts often clean dirty data iteratively-cleaning some data, executing the analysis, and then cleaning more 
+    data based on the results. We explore the iterative cleaning process in the context of statistical model training, 
+    which is an increasingly popular form of data analytics. We propose ActiveClean, which allows for progressive and 
+    iterative cleaning in statistical modeling problems while preserving convergence guarantees. ActiveClean supports 
+    an important class of models called convex loss models (e.g., linear regression and SVMs), and prioritizes 
+    cleaning those records likely to affect the results. We evaluate ActiveClean on five real-world datasets 
+    UCI Adult, UCI EEG, MNIST, IMDB, and Dollars For Docs with both real and synthetic errors. The results show that 
+    our proposed optimizations can improve model accuracy by up-to 2.5x for the same amount of data cleaned. 
+    Furthermore for a fixed cleaning budget and on all real dirty datasets, ActiveClean returns more accurate 
+    models than uniform sampling and Active Learning.
+  year: 2016
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://www.vldb.org/pvldb/vol9/p948-krishnan.pdf
+    website: https://activeclean.github.io/
+  id: krishnan2016activeclean
+  thumbnail: /images/papers/krishnan2016activeclean.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: VLDB
+  venueTrack: null
+  group: Quantifying Data Importance
+  tag: data-importance-general
+
+- bibTeX: "@inproceedings{koh2017understanding, 
+    \ title={Understanding Black-box Predictions via Influence Functions},
+    \ author={Koh, Pang Wei and Liang, Percy},
+    \ booktitle={Proceedings of the 34th International Conference on Machine Learning},
+    \ pages={1885--1894},
+    \ year={2017},
+    \ organization={PMLR}
+    \ }"
+  title: 'Understanding Black-box Predictions via Influence Functions'
+  authors:
+  - PW Koh
+  - P Liang
+  abstract: |
+    How can we explain the predictions of a black-box model? In this paper, we use influence functions — a classic
+    technique from robust statistics — to trace a model's prediction through the learning algorithm and back to its 
+    training data, thereby identifying training points most responsible for a given prediction. To scale up influence 
+    functions to modern machine learning settings, we develop a simple, efficient implementation that requires only 
+    oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable 
+    models where the theory breaks down, approximations to influence functions can still provide valuable information. 
+    On linear models and convolutional neural networks, we demonstrate that influence functions are useful for 
+    multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating 
+    visually-indistinguishable training-set attacks.
+  year: 2017
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://proceedings.mlr.press/v70/koh17a
+    code: https://github.com/kohpangwei/influence-release
+  id: koh2017understanding
+  thumbnail: /images/papers/koh2017understanding.png
+  type: publication
+  venueLong: Proceedings of the 34th International Conference on Machine Learning
+  venueShort: ICML
+  venueTrack: null
+  group: Quantifying Data Importance
+  tag: data-importance-general
+
+- bibTeX: "@article{northcutt2021confident,
+    \ title={Confident learning: Estimating uncertainty in dataset labels},
+    \ author={Northcutt, Curtis and Jiang, Lu and Chuang, Isaac},
+    \ journal={Journal of Artificial Intelligence Research},
+    \ volume={70},
+    \ pages={1373--1411},
+    \ year={2021}
+    \ }"
+  title: 'Confident Learning: Estimating Uncertainty in Dataset Labels'
+  authors:
+  - C Northcutt
+  - L Jiang
+  - I Chuang
+  abstract: |
+    Learning exists in the context of data, yet notions of confidence typically focus on model predictions, not 
+    label quality. Confident learning (CL) is an alternative approach which focuses instead on label quality by 
+    characterizing and identifying label errors in datasets, based on the principles of pruning noisy data, 
+    counting with probabilistic thresholds to estimate noise, and ranking examples to train with confidence. 
+    Whereas numerous studies have developed these principles independently, here, we combine them, building on the 
+    assumption of a class-conditional noise process to directly estimate the joint distribution between noisy (given) 
+    labels and uncorrupted (unknown) labels. This results in a generalized CL which is provably consistent and 
+    experimentally performant. We present sufficient conditions where CL exactly finds label errors, and show CL 
+    performance exceeding seven recent competitive approaches for learning with noisy labels on the CIFAR dataset. 
+    Uniquely, the CL framework is not coupled to a specific data modality or model (e.g., we use CL to find several 
+    label errors in the presumed error-free MNIST dataset and improve sentiment classification on text data in Amazon 
+    Reviews). We also employ CL on ImageNet to quantify ontological class overlap (e.g., estimating 645 missile 
+    images are mislabeled as their parent class projectile), and moderately increase model accuracy (e.g., for 
+    ResNet) by cleaning data prior to training. These results are replicable using the open-source cleanlab release.
+  year: 2021
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://jair.org/index.php/jair/article/view/12125
+    blog: https://l7.curtisnorthcutt.com/confident-learning
+    code: https://github.com/cleanlab/cleanlab
+  id: northcutt2021confident
+  thumbnail: /images/papers/northcutt2021confident.png
+  type: publication
+  venueLong: Journal of Artificial Intelligence Research
+  venueShort: JAIR
+  venueTrack: null
+  group: Quantifying Data Importance
+  tag: data-importance-general
+
+- bibTeX: "@inproceedings{ilyas2022datamodels,
+    \ title={Datamodels: Predicting Predictions from Training Data},
+    \ author={Ilyas, Andrew and Park, Sung Min and Engstrom, Logan and Leclerc, Guillaume and Madry, Aleksander},
+    \ booktitle={Proceedings of the 39th International Conference on Machine Learning},
+    \ year={2022}
+    \ }"
+  title: 'DataModels: Predicting Predictions from Training Data'
+  authors:
+  - A Ilyas
+  - SM Park
+  - L Engstrom
+  - G Leclerc
+  - A Madry
+  abstract: |
+    We present a conceptual framework, datamodeling, for analyzing the behavior of a model class in terms of the
+    training data. For any fixed “target” example x, training set S, and learning algorithm, a datamodel is a 
+    parameterized function that for any subset S' of the training set S - using only information about which
+    examples of S are contained in S' - predicts the outcome of training a model on S' and evaluating on x.
+    Despite the complexity of the underlying process being approximated (e.g. end-to-end training and evaluation 
+    of deep neural networks), we show that even simple linear datamodels successfully predict model outputs. 
+    We then demonstrate that datamodels give rise to a variety of applications, such as: accurately predicting 
+    the effect of dataset counterfactuals; identifying brittle predictions; finding semantically similar examples; 
+    quantifying train-test leakage; and embedding data into a well-behaved and feature-rich representation space.
+  year: 2022
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://proceedings.mlr.press/v162/ilyas22a
+    blog: https://gradientscience.org/datamodels-1/
+    code: https://github.com/MadryLab/datamodels
+  id: ilyas2022datamodels
+  thumbnail: /images/papers/ilyas2022datamodels.png
+  type: publication
+  venueLong: Proceedings of the 39th International Conference on Machine Learning
+  venueShort: ICML
+  venueTrack: null
+  group: Quantifying Data Importance
+  tag: data-importance-general
+
+- bibTeX: "@inproceedings{jia2021scalability,
+    \ title={Scalability vs. utility: Do we have to sacrifice one for the other in data importance quantification?},
+    \ author={Jia, Ruoxi and Wu, Fan and Sun, Xuehui and Xu, Jiacen and Dao, David and Kailkhura, Bhavya and Zhang, Ce and Li, Bo and Song, Dawn},
+    \ booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    \ pages={8239--8247},
+    \ year={2021}
+    \ }"
+  title: 'Scalability vs. Utility: Do We Have to Sacrifice One for the Other in Data Importance Quantification?'
+  authors:
+  - R Jia
+  - F Wu
+  - X Sun
+  - J Xu
+  - D Dao
+  - B Kailkhura
+  - C Zhang
+  - B Li
+  - D Song
+  abstract: |
+    Quantifying the importance of each training point to a learning task is a fundamental problem in machine learning 
+    and the estimated importance scores have been leveraged to guide a range of data workflows such as data 
+    summarization and domain adaption. One simple idea is to use the leave-one-out error of each training point to 
+    indicate its importance. Recent work has also proposed to use the Shapley value, as it defines a unique value 
+    distribution scheme that satisfies a set of appealing properties. However, calculating Shapley values is often 
+    expensive, which limits its applicability in real-world applications at scale. Multiple heuristics to improve the 
+    scalability of calculating Shapley values have been proposed recently, with the potential risk of compromising 
+    their utility in real-world applications. How well do existing data quantification methods perform on existing 
+    workflows? How do these methods compare with each other, empirically and theoretically? Must we sacrifice 
+    scalability for the utility in these workflows when using these methods? In this paper, we conduct a novel 
+    theoretical analysis comparing the utility of different importance quantification methods, and report extensive 
+    experimental studies on settings such as noisy label detection, watermark removal, data summarization, data 
+    acquisition, and domain adaptation on existing and proposed workflows. We show that Shapley value approximation 
+    based on a KNN surrogate over pre-trained feature embeddings obtains comparable utility with existing algorithms 
+    while achieving significant scalability improvement, often by orders of magnitude. Our theoretical analysis also 
+    justifies its advantage over the leave-one-out error.
+  year: 2021
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://openaccess.thecvf.com/content/CVPR2021/html/Jia_Scalability_vs._Utility_Do_We_Have_To_Sacrifice_One_for_CVPR_2021_paper.html
+    code: https://github.com/AI-secure/Shapley-Study
+  id: jia2021scalability
+  thumbnail: /images/papers/jia2021scalability.png
+  type: publication
+  venueLong: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  venueShort: CVPR
+  venueTrack: null
+  group: Shapley Value as a Data Importance Metric
+  tag: data-importance-shapley
+
+- bibTeX: "@inproceedings{ghorbani2019data,
+    \ title={Data shapley: Equitable valuation of data for machine learning},
+    \ author={Ghorbani, Amirata and Zou, James},
+    \ booktitle={International conference on machine learning},
+    \ pages={2242--2251},
+    \ year={2019},
+    \ organization={PMLR}
+    \ }"
+  title: 'Data Shapley: Equitable Valuation of Data for Machine Learning'
+  authors:
+  - A Ghorbani
+  - J Zou
+  abstract: |
+    As data becomes the fuel driving technological and economic growth, a fundamental challenge is how to quantify 
+    the value of data in algorithmic predictions and decisions. For example, in healthcare and consumer markets, it 
+    has been suggested that individuals should be compensated for the data that they generate, but it is not clear 
+    what is an equitable valuation for individual data. In this work, we develop a principled framework to address 
+    data valuation in the context of supervised machine learning. Given a learning algorithm trained on n data points 
+    to produce a predictor, we propose data Shapley as a metric to quantify the value of each training datum to the 
+    predictor performance. Data Shapley uniquely satisfies several natural properties of equitable data valuation. 
+    We develop Monte Carlo and gradient-based methods to efficiently estimate data Shapley values in practical 
+    settings where complex learning algorithms, including neural networks, are trained on large datasets. In addition 
+    to being equitable, extensive experiments across biomedical, image and synthetic data demonstrate that data 
+    Shapley has several other benefits: 1) it is more powerful than the popular leave-one-out or leverage score in 
+    providing insight on what data is more valuable for a given learning task; 2) low Shapley value data effectively 
+    capture outliers and corruptions; 3) high Shapley value data inform what type of new data to acquire to 
+    improve the predictor.
+  year: 2019
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://proceedings.mlr.press/v97/ghorbani19c.html
+    code: https://github.com/amiratag/DataShapley
+  id: ghorbani2019data
+  thumbnail: /images/papers/ghorbani2019data.png
+  type: publication
+  venueLong: International Conference on Machine Learning
+  venueShort: ICML
+  venueTrack: null
+  group: Shapley Value as a Data Importance Metric
+  tag: data-importance-shapley
+
+- bibTeX: "@inproceedings{kwon2022beta,
+    \ title={Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning},
+    \ author={Kwon, Yongchan and Zou, James},
+    \ booktitle={International Conference on Artificial Intelligence and Statistics},
+    \ pages={8780--8802},
+    \ year={2022},
+    \ organization={PMLR}
+    \ }"
+  title: 'Beta Shapley: A Unified and Noise-reduced Data Valuation Framework for Machine Learning'
+  authors:
+  - Y Kwon
+  - J Zou
+  abstract: |
+    Data Shapley has recently been proposed as a principled framework to quantify the contribution of individual 
+    datum in machine learning. It can effectively identify helpful or harmful data points for a learning algorithm. 
+    In this paper, we propose Beta Shapley, which is a substantial generalization of Data Shapley. Beta Shapley 
+    arises naturally by relaxing the efficiency axiom of the Shapley value, which is not critical for machine 
+    learning settings. Beta Shapley unifies several popular data valuation methods and includes data Shapley as a 
+    special case. Moreover, we prove that Beta Shapley has several desirable statistical properties and propose 
+    efficient algorithms to estimate it. We demonstrate that Beta Shapley outperforms state-of-the-art data valuation 
+    methods on several downstream ML tasks such as: 1) detecting mislabeled training data; 2) learning with 
+    subsamples; and 3) identifying points whose addition or removal have the largest positive or negative impact 
+    on the model.
+  year: 2022
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://proceedings.mlr.press/v151/kwon22a
+    code: https://github.com/ykwon0407/beta_shapley
+  id: kwon2022beta
+  thumbnail: /images/papers/kwon2022beta.png
+  type: publication
+  venueLong: International Conference on Artificial Intelligence and Statistics
+  venueShort: AISTATS
+  venueTrack: null
+  group: Shapley Value as a Data Importance Metric
+  tag: data-importance-shapley
+
+- bibTeX: "@article{jia2019efficient,
+    \ title={Efficient task-specific data valuation for nearest neighbor algorithms},
+    \ author={Jia, Ruoxi and Dao, David and Wang, Boxin and Hubis, Frances Ann and Gurel, Nezihe Merve and Li, Bo and Zhang, Ce and Spanos, Costas and Song, Dawn},
+    \ journal={Proceedings of the VLDB Endowment},
+    \ volume={12},
+    \ number={11},
+    \ pages={1610--1623},
+    \ year={2019},
+    \ publisher={VLDB Endowment}
+    \ }"
+  title: 'Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms'
+  authors:
+  - R Jia
+  - D Dao
+  - B Wang
+  - FA Hubis
+  - NM Gurel
+  - B Li
+  - C Zhang
+  - C Spanos
+  - D Song
+  abstract: |
+    Given a data set D containing millions of data points and a data consumer who is willing to pay for $X 
+    to train a machine learning (ML) model over D, how should we distribute this $X to each data point to 
+    reflect its "value"? In this paper, we define the "relative value of data" via the Shapley value, as it 
+    uniquely possesses properties with appealing real-world interpretations, such as fairness, rationality and 
+    decentralizability. For general, bounded utility functions, the Shapley value is known to be challenging to 
+    compute: to get Shapley values for all N data points, it requires O(2N) model evaluations for exact 
+    computation and O(N log N) for (ϵ, δ)-approximation.
+
+    In this paper, we focus on one popular family of ML models relying on K-nearest neighbors (KNN). The most 
+    surprising result is that for unweighted KNN classifiers and regressors, the Shapley value of all N data points 
+    can be computed, exactly, in O(N log N) time - an exponential improvement on computational complexity! 
+    Moreover, for (ϵ, δ)-approximation, we are able to develop an algorithm based on Locality Sensitive Hashing (LSH) 
+    with only sublinear complexity O(Nh(ϵ, K) log N) when ϵ is not too small and K is not too large. We empirically 
+    evaluate our algorithms on up to 10 million data points and even our exact algorithm is up to three orders of 
+    magnitude faster than the baseline approximation algorithm. The LSH-based approximation algorithm can accelerate 
+    the value calculation process even further.
+
+    We then extend our algorithm to other scenarios such as (1) weighed KNN classifiers, (2) different data points 
+    are clustered by different data curators, and (3) there are data analysts providing computation who also 
+    requires proper valuation. Some of these extensions, although also being improved exponentially, are less 
+    practical for exact computation (e.g., O(NK) complexity for weigthed KNN). We thus propose an Monte Carlo 
+    approximation algorithm, which is O(N(log N)2/(log K)2) times more efficient than the baseline 
+    approximation algorithm.
+  year: 2019
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://www.vldb.org/pvldb/vol12/p1610-jia.pdf
+    code: https://github.com/AI-secure/KNN-PVLDB
+  id: jia2019efficient
+  thumbnail: /images/papers/jia2019efficient.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: VLDB
+  venueTrack: null
+  group: Shapley Value as a Data Importance Metric
+  tag: data-importance-shapley
+
+- bibTeX: "@inproceedings{wang2024data,
+    \ title={Data Shapley in One Training Run},
+    \ author={Wang, Jiachen T and Mittal, Prateek and Song, Dawn and Jia, Ruoxi},
+    \ booktitle={The Thirteenth International Conference on Learning Representations}
+    \ year={2024}
+    \ }"
+  title: 'Data Shapley in One Training Run'
+  authors:
+  - JT Wang
+  - P Mittal
+  - D Song
+  - R Jia
+  abstract: |
+    Data Shapley offers a principled framework for attributing the contribution of data within machine learning 
+    contexts. However, the traditional notion of Data Shapley requires re-training models on various data subsets, 
+    which becomes computationally infeasible for large-scale models. Additionally, this retraining-based definition 
+    cannot evaluate the contribution of data for a specific model training run, which may often be of interest in 
+    practice. This paper introduces a novel concept, In-Run Data Shapley, which eliminates the need for model 
+    retraining and is specifically designed for assessing data contribution for a particular model of interest. 
+    In-Run Data Shapley calculates the Shapley value for each gradient update iteration and accumulates these values 
+    throughout the training process. We present several techniques that allow the efficient scaling of In-Run Data 
+    Shapley to the size of foundation models. In its most optimized implementation, our method adds negligible runtime 
+    overhead compared to standard model training. This dramatic efficiency improvement makes it possible to perform 
+    data attribution for the foundation model pretraining stage. We present several case studies that offer fresh 
+    insights into pretraining data's contribution and discuss their implications for copyright in generative AI 
+    and pretraining data curation.
+  year: 2024
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://openreview.net/forum?id=HD6bWcj87Y
+    blog: https://jiachen-t-wang.github.io/data-shapley.github.io/
+  id: wang2024data
+  thumbnail: /images/papers/wang2024data.png
+  type: publication
+  venueLong: The Thirteenth International Conference on Learning Representations
+  venueShort: ICLR
+  venueTrack: null
+  group: Shapley Value as a Data Importance Metric
+  tag: data-importance-shapley
+
+- bibTeX: "@inproceedings{pradhan2022interpretable,
+    \ title={Interpretable data-based explanations for fairness debugging},
+    \ author={Pradhan, Romila and Zhu, Jiongli and Glavic, Boris and Salimi, Babak},
+    \ booktitle={Proceedings of the 2022 international conference on management of data},
+    \ pages={247--261},
+    \ year={2022}
+    \ }"
+  title: 'Interpretable Data-based Explanations for Fairness Debugging'
+  authors:
+  - R Pradhan
+  - J Zhu
+  - B Glavic
+  - B Salimi
+  abstract: |
+    A wide variety of fairness metrics and eXplainable Artificial Intelligence (XAI) approaches have been proposed 
+    in the literature to identify bias in machine learning models that are used in critical real-life contexts. 
+    However, merely reporting on a model's bias or generating explanations using existing XAI techniques is 
+    insufficient to locate and eventually mitigate sources of bias. We introduce Gopher, a system that produces 
+    compact, interpretable, and causal explanations for bias or unexpected model behavior by identifying coherent 
+    subsets of the training data that are root-causes for this behavior. Specifically, we introduce the concept of 
+    causal responsibility that quantifies the extent to which intervening on training data by removing or updating 
+    subsets of it can resolve the bias. Building on this concept, we develop an efficient approach for generating 
+    the top-k patterns that explain model bias by utilizing techniques from the machine learning (ML) community to 
+    approximate causal responsibility, and using pruning rules to manage the large search space for patterns. 
+    Our experimental evaluation demonstrates the effectiveness of Gopher in generating interpretable explanations 
+    for identifying and debugging sources of bias.
+  year: 2022
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3514221.3517886
+  id: pradhan2022interpretable
+  thumbnail: /images/papers/pradhan2022interpretable.png
+  type: publication
+  venueLong: Proceedings of the 2022 International Conference on Management of Data
+  venueShort: SIGMOD
+  venueTrack: null
+  group: Applying Data Importance
+  tag: data-importance-application
+
+- bibTeX: "@article{lyu2023improving,
+    \ title={Improving retrieval-augmented large language models via data importance learning},
+    \ author={Lyu, Xiaozhong and Grafberger, Stefan and Biegel, Samantha and Wei, Shaopeng and Cao, Meng and Schelter, Sebastian and Zhang, Ce},
+    \ journal={arXiv preprint arXiv:2307.03027},
+    \ year={2023}
+    \ }"
+  title: 'Improving Retrieval-Augmented Large Language Models via Data Importance Learning'
+  authors:
+  - X Lyu
+  - S Grafberger
+  - S Biegel
+  - S Wei
+  - M Cao
+  - S Schelter
+  - C Zhang
+  abstract: |
+    Retrieval augmentation enables large language models to take advantage of external knowledge, for example on 
+    tasks like question answering and data imputation. However, the performance of such retrieval-augmented models is 
+    limited by the data quality of their underlying retrieval corpus. In this paper, we propose an algorithm based 
+    on multilinear extension for evaluating the data importance of retrieved data points. There are exponentially many 
+    terms in the multilinear extension, and one key contribution of this paper is a polynomial time algorithm that 
+    computes exactly, given a retrieval-augmented model with an additive utility function and a validation set, the 
+    data importance of data points in the retrieval corpus using the multilinear extension of the model's utility 
+    function. We further proposed an even more efficient ({\epsilon}, {\delta})-approximation algorithm. Our 
+    experimental results illustrate that we can enhance the performance of large language models by only pruning or 
+    reweighting the retrieval corpus, without requiring further training. For some tasks, this even allows a small 
+    model (e.g., GPT-JT), augmented with a search engine API, to outperform GPT-3.5 (without retrieval augmentation). 
+    Moreover, we show that weights based on multilinear extension can be computed efficiently in practice (e.g., in 
+    less than ten minutes for a corpus with 100 million elements).
+  year: 2023
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://arxiv.org/abs/2307.03027
+    code: https://github.com/amsterdata/ragbooster
+  id: lyu2023improving
+  thumbnail: /images/papers/lyu2023improving.png
+  type: publication
+  venueLong: arXiv preprint arXiv:2307.03027
+  venueShort: arXiv
+  venueTrack: null
+  group: Applying Data Importance
+  tag: data-importance-application
+
+- bibTeX: "@article{pedregosa2011scikit,
+    \ title={Scikit-learn: Machine learning in Python},
+    \ author={Fabian Pedregosa and Gael Varoquaux and Alexandre Gramfort and Vincent Michel and Bertrand Thirion and Olivier Grisel and Mathieu Blondel and Peter Prettenhofer and Ron Weiss and Vincent Dubourg and Jake Vanderplas and Alexandre Passos and David Cournapeau and Matthieu Brucher and Matthieu Perrot and Edouard Duchesnay},
+    \ journal={the Journal of machine Learning research},
+    \ volume={12},
+    \ pages={2825--2830},
+    \ year={2011},
+    \ publisher={JMLR. org}
+    \ }"
+  title: 'Scikit-learn: Machine Learning in Python'
+  authors:
+  - F Pedregosa
+  - G Varoquaux
+  - A Gramfort
+  - V Michel
+  - B Thirion
+  - O Grisel
+  - M Blondel
+  - P Prettenhofer
+  - R Weiss
+  - V Dubourg
+  - J Vanderplas
+  - A Passos
+  - D Cournapeau
+  - M Brucher
+  - M Perrot
+  - E Duchesnay
+  abstract: |
+    Scikit-learn is a Python module integrating a wide range of state-of-the-art machine learning algorithms for 
+    medium-scale supervised and unsupervised problems. This package focuses on bringing machine learning to 
+    non-specialists using a general-purpose high-level language. Emphasis is put on ease of use, performance, 
+    documentation, and API consistency. It has minimal dependencies and is distributed under the simplified BSD 
+    license, encouraging its use in both academic and commercial settings. Source code, binaries, and documentation 
+    can be downloaded from http://scikit-learn.sourceforge.net.
+  year: 2011
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://www.jmlr.org/papers/v12/pedregosa11a.html
+    website: https://scikit-learn.org/
+    code: https://www.github.com/scikit-learn/scikit-learn
+  id: pedregosa2011scikit
+  thumbnail: /images/papers/pedregosa2011scikit.png
+  type: publication
+  venueLong: Journal of Machine Learning Research
+  venueShort: JMLR
+  venueTrack: null
+  groups: Frameworks for Building ML Pipelines
+  tag: ml-pipelines-general
+
+- bibTeX: "@inproceedings{baylor2017tfx,
+    \ author = {Baylor, Denis and Breck, Eric and Cheng, Heng-Tze and Fiedel, Noah and Foo, Chuan Yu and Haque, Zakaria and Haykal, Salem and Ispir, Mustafa and Jain, Vihan and Koc, Levent and Koo, Chiu Yuen and Lew, Lukasz and Mewald, Clemens and Modi, Akshay Naresh and Polyzotis, Neoklis and Ramesh, Sukriti and Roy, Sudip and Whang, Steven Euijong and Wicke, Martin and Wilkiewicz, Jarek and Zhang, Xin and Zinkevich, Martin},
+    \ title = {TFX: A TensorFlow-Based Production-Scale Machine Learning Platform},
+    \ year = {2017},
+    \ isbn = {9781450348874},
+    \ publisher = {Association for Computing Machinery},
+    \ address = {New York, NY, USA},
+    \ url = {https://doi.org/10.1145/3097983.3098021},
+    \ doi = {10.1145/3097983.3098021},
+    booktitle = {Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+    \ pages = {1387-1395},
+    \ numpages = {9},
+    \ keywords = {continuous training, end-to-end platform, large-scale machine learning},
+    \ location = {Halifax, NS, Canada},
+    \ series = {KDD '17}
+    \ }"
+  title: 'TFX: A TensorFlow-Based Production-Scale Machine Learning Platform'
+  authors:
+  - D Baylor
+  - E Breck
+  - H Cheng
+  - N Fiedel
+  - CY Foo
+  - Z Haque
+  - S Haykal
+  - M Ispir
+  - V Jain
+  - L Koc
+  - CY Koo
+  - L Lew
+  - C Mewald
+  - A Modi
+  - S Polyzotis
+  - S Ramesh
+  - S Roy
+  - SE Whang
+  - M Wicke
+  - J Wilkiewicz
+  - X Zhang
+  - M Zinkevich
+  abstract: |
+    Creating and maintaining a platform for reliably producing and deploying machine learning models requires careful 
+    orchestration of many components---a learner for generating models based on training data, modules for analyzing 
+    and validating both data as well as models, and finally infrastructure for serving models in production. This 
+    becomes particularly challenging when data changes over time and fresh models need to be produced continuously. 
+    Unfortunately, such orchestration is often done ad hoc using glue code and custom scripts developed by individual 
+    teams for specific use cases, leading to duplicated effort and fragile systems with high technical debt.
+
+    We present TensorFlow Extended (TFX), a TensorFlow-based general-purpose machine learning platform implemented at 
+    Google. By integrating the aforementioned components into one platform, we were able to standardize the components, 
+    simplify the platform configuration, and reduce the time to production from the order of months to weeks, while 
+    providing platform stability that minimizes disruptions.
+
+    We present the case study of one deployment of TFX in the Google Play app store, where the machine learning models 
+    are refreshed continuously as new data arrive. Deploying TFX led to reduced custom code, faster experiment cycles, 
+    and a 2% increase in app installs resulting from improved data and model analysis.
+  year: 2017
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3097983.3098021
+    website: https://tensorflow.github.io/tfx/
+    code: https://github.com/tensorflow/tfx
+  id: baylor2017tfx
+  thumbnail: /images/papers/baylor2017tfx.png
+  type: publication
+  venueLong: Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+  venueShort: KDD
+  venueTrack: null
+  groups: Frameworks for Building ML Pipelines
+  tag: ml-pipelines-general
+
+- bibTeX: "@article{meng2016mllib,
+    \ title={Mllib: Machine learning in apache spark},
+    \ author={Xiangrui Meng and Joseph Bradley and Burak Yavuz and Evan Sparks and Shivaram Venkataraman and Davies Liu and Jeremy Freeman and DB Tsai and Manish Amde and Sean Owen and Doris Xin and Reynold Xin and Michael J. Franklin and Reza Zadeh and Matei Zaharia and Ameet Talwalkar},
+    \ journal={Journal of Machine Learning Research},
+    \ volume={17},
+    \ number={34},
+    \ pages={1--7},
+    \ year={2016}
+    \ }"
+  title: 'MLlib: Machine Learning in Apache Spark'
+  authors:
+  - X Meng
+  - J Bradley
+  - B Yavuz
+  - E Sparks
+  - S Venkataraman
+  - D Liu
+  - J Freeman
+  - DB Tsai
+  - M Amde
+  - S Owen
+  - D Xin
+  - R Xin
+  - MJ Franklin
+  - R Zadeh
+  - M Zaharia
+  - A Talwalkar
+  abstract: |
+    Apache Spark is a popular open-source platform for large-scale data processing that is well-suited for iterative 
+    machine learning tasks. In this paper we present MLlib, Spark's open- source distributed machine learning library. 
+    MLlib provides efficient functionality for a wide range of learning settings and includes several underlying 
+    statistical, optimization, and linear algebra primitives. Shipped with Spark, MLlib supports several languages 
+    and provides a high-level API that leverages Spark's rich ecosystem to simplify the development of end-to-end 
+    machine learning pipelines. MLlib has experienced a rapid growth due to its vibrant open-source community of 
+    over 140 contributors, and includes extensive documentation to support further growth and to let users quickly 
+    get up to speed.
+  year: 2016
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://www.jmlr.org/papers/v17/15-237.html
+    website: https://spark.apache.org/mllib/
+    code: https://github.com/apache/spark/tree/master/mllib
+  id: meng2016mllib
+  thumbnail: /images/papers/meng2016mllib.png
+  type: publication
+  venueLong: Journal of Machine Learning Research
+  venueShort: JMLR
+  venueTrack: null
+  groups: Frameworks for Building ML Pipelines
+  tag: ml-pipelines-general
+
+- bibTeX: "@article{boehm2019systemds,
+    \ title={SystemDS: A declarative machine learning system for the end-to-end data science lifecycle},
+    \ author={Matthias Boehm and Iulian Antonov and Sebastian Baunsgaard and Mark Dokter and Robert Ginthoer and Kevin Innerebner and Florijan Klezin and Stefanie Lindstaedt and Arnab Phani and Benjamin Rath and Berthold Reinwald and Shafaq Siddiqi and Sebastian Benjamin Wrede},
+    \ journal={10th Annual Conference on Innovative Data Systems Research},
+    \ year={2020}
+    \ }"
+  title: 'SystemDS: A Declarative Machine Learning System for the End-to-End Data Science Lifecycle'
+  authors:
+  - M Boehm
+  - I Antonov
+  - S Baunsgaard
+  - M Dokter
+  - R Ginthoer
+  - K Innerebner
+  - F Klezin
+  - S Lindstaedt
+  - A Phani
+  - B Rath
+  - B Reinwald
+  - S Siddiqi
+  - SB Wrede
+  abstract: |
+    Machine learning (ML) applications become increasingly common in many domains. ML systems to execute these 
+    workloads include numerical computing frameworks and libraries, ML algorithm libraries, and specialized systems 
+    for deep neural networks and distributed ML. These systems focus primarily on efficient model training and 
+    scoring. However, the data science process is exploratory, and deals with underspecified objectives and a wide 
+    variety of heterogeneous data sources. Therefore, additional tools are employed for data engineering and 
+    debugging, which requires boundary crossing, unnecessary manual effort, and lacks optimization across the 
+    lifecycle. In this paper, we introduce SystemDS, an open source ML system for the end-to-end data science 
+    lifecycle from data integration, cleaning, and preparation, over local, distributed, and federated ML model 
+    training, to debugging and serving. To this end, we aim to provide a stack of declarative language abstractions 
+    for the different lifecycle tasks, and users with different expertise. We describe the overall system 
+    architecture, explain major design decisions (motivated by lessons learned from Apache SystemML), and 
+    discuss key features and research directions. Finally, we provide preliminary results that show the 
+    potential of end-to-end lifecycle optimization.
+  year: 2020
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://phaniarnab.github.io/assets/papers/cidr2020.pdf
+    website: https://systemds.apache.org/
+    code: https://github.com/apache/systemds
+  id: boehm2019systemds
+  thumbnail: /images/papers/boehm2019systemds.png
+  type: publication
+  venueLong: 10th Annual Conference on Innovative Data Systems Research
+  venueShort: CIDR
+  venueTrack: null
+  groups: Frameworks for Building ML Pipelines
+  tag: ml-pipelines-general
+
+- bibTeX: "@inproceedings{xin2021production,
+    \ title={Production machine learning pipelines: Empirical analysis and optimization opportunities},
+    \ author={Xin, Doris and Miao, Hui and Parameswaran, Aditya and Polyzotis, Neoklis},
+    \ booktitle={Proceedings of the 2021 international conference on management of data},
+    \ pages={2639--2652},
+    \ year={2021}
+    \ }"
+  title: 'Production Machine Learning Pipelines: Empirical Analysis and Optimization Opportunities'
+  authors:
+  - D Xin
+  - H Miao
+  - A Parameswaran
+  - N Polyzotis
+  abstract: |
+    Machine learning (ML) is now commonplace, powering data-driven applications in various organizations. Unlike 
+    the traditional perception of ML in research, ML production pipelines are complex, with many interlocking 
+    analytical components beyond training, whose sub-parts are often run multiple times on overlapping subsets 
+    of data. However, there is a lack of quantitative evidence regarding the lifespan, architecture, frequency, 
+    and complexity of these pipelines to understand how data management research can be used to make them more 
+    efficient, effective, robust, and reproducible. To that end, we analyze the provenance graphs of 3000 
+    production ML pipelines at Google, comprising over 450,000 models trained, spanning a period of over four 
+    months, in an effort to understand the complexity and challenges underlying production ML. Our analysis 
+    reveals the characteristics, components, and topologies of typical industry-strength ML pipelines at various 
+    granularities. Along the way, we introduce a specialized data model for representing and reasoning about 
+    repeatedly run components in these ML pipelines, which we call model graphlets. We identify several rich 
+    opportunities for optimization, leveraging traditional data management ideas. We show how targeting even 
+    one of these opportunities, i.e., identifying and pruning wasted computation that does not translate to model 
+    deployment, can reduce wasted computation cost by 50% without compromising the model deployment cadence.
+  year: 2021
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3448016.3457566
+  id: xin2021production
+  thumbnail: /images/papers/xin2021production.png
+  type: publication
+  venueLong: Proceedings of the 2021 International Conference on Management of Data
+  venueShort: SIGMOD
+  venueTrack: null
+  groups: Studies of ML Pipelines
+  tag: ml-pipelines-studies
+
+- bibTeX: "@article{psallidas2022data,
+    \ title={Data science through the looking glass: Analysis of millions of github notebooks and ml. net pipelines},
+    \ author={Psallidas, Fotis and Zhu, Yiwen and Karlaš, Bojan and Henkel, Jordan and Interlandi, Matteo and Krishnan, Subru and Kroth, Brian and Emani, Venkatesh and Wu, Wentao and Zhang, Ce and Weimer, Markus and Floratou, Avrilia and Curino, Carlo and Karanasos, Konstantinos},
+    \ journal={ACM SIGMOD Record},
+    \ volume={51},
+    \ number={2},
+    \ pages={30--37},
+    \ year={2022},
+    \ publisher={ACM New York, NY, USA}
+    \ }"
+  title: 'Data Science Through the Looking Glass: Analysis of Millions of GitHub Notebooks and ML.NET Pipelines'
+  authors:
+  - F Psallidas
+  - Y Zhu
+  - B Karlaš
+  - J Henkel
+  - M Interlandi
+  - S Krishnan
+  - B Kroth
+  - V Emani
+  - W Wu
+  - C Zhang
+  - M Weimer
+  - A Floratou
+  - C Curino
+  - K Karanasos
+  abstract: |
+    The recent success of machine learning (ML) has led to an explosive growth of systems and applications built by 
+    an ever-growing community of system builders and data science (DS) practitioners. This quickly shifting panorama, 
+    however, is challenging for system builders and practitioners alike to follow. In this paper, we set out to 
+    capture this panorama through a wide-angle lens, performing the largest analysis of DS projects to date, focusing 
+    on questions that can advance our understanding of the field and determine investments. Specifically, we 
+    download and analyze (a) over 8M notebooks publicly available on GITHUB and (b) over 2M enterprise ML pipelines 
+    developed within Microsoft. Our analysis includes coarse-grained statistical characterizations, finegrained 
+    analysis of libraries and pipelines, and comparative studies across datasets and time. We report a large number 
+    of measurements for our readers to interpret and draw actionable conclusions on (a) what system builders should 
+    focus on to better serve practitioners and (b) what technologies should practitioners rely on.
+  year: 2022
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://sigmodrecord.org/publications/sigmodRecord/2206/pdfs/05_Research_Psallidas.pdf
+  id: psallidas2022data
+  thumbnail: /images/papers/psallidas2022data.png
+  type: publication
+  venueLong: ACM SIGMOD Record
+  venueShort: SIGMOD Record
+  venueTrack: null
+  groups: Studies of ML Pipelines
+  tag: ml-pipelines-studies
+
+- bibTeX: "@inproceedings{green2007provenance,
+    \ title={Provenance semirings},
+    \ author={Green, Todd J and Karvounarakis, Grigoris and Tannen, Val},
+    \ booktitle={Proceedings of the twenty-sixth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems},
+    \ pages={31--40},
+    \ year={2007}
+    \ }"
+  title: 'Provenance Semirings'
+  authors:
+  - T Green
+  - G Karvounarakis
+  - V Tannen
+  abstract: |
+    We show that relational algebra calculations for incomplete databases, probabilistic databases, bag semantics 
+    and why-provenance are particular cases of the same general algorithms involving semirings. This further 
+    suggests a comprehensive provenance representation that uses semirings of polynomials. We extend these 
+    considerations to datalog and semirings of formal power series. We give algorithms for datalog provenance 
+    calculation as well as datalog evaluation for incomplete and probabilistic databases. Finally, we show that 
+    for some semirings containment of conjunctive queries is the same as for standard set semantics.
+  year: 2007
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://courses.cs.washington.edu/courses/cse544/11wi/lectures/tannen-semirings.pdf
+  id: green2007provenance
+  thumbnail: /images/papers/green2007provenance.png
+  type: publication
+  venueLong: Proceedings of the Twenty-Sixth ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems
+  venueShort: PODS
+  venueTrack: null
+  group: Fundamental Concepts
+  tag: ml-pipelines-fundamentals
+
+- bibTeX: "@inproceedings{karlas2023data,
+    \ title={Data Debugging with Shapley Importance over Machine Learning Pipelines},
+    \ author={Karlaš}, Bojan and Dao, David and Interlandi, Matteo and Schelter, Sebastian and Wu, Wentao and Zhang, Ce},
+    \ booktitle={The Twelfth International Conference on Learning Representations}
+    \ year={2024}
+    \ }"
+  title: 'Data Debugging with Shapley Importance over Machine Learning Pipelines'
+  authors:
+  - B Karlaš
+  - D Dao
+  - M Interlandi
+  - S Schelter
+  - W Wu
+  - C Zhang
+  abstract: |
+    When a machine learning (ML) model exhibits poor quality (e.g., poor accuracy or fairness), the problem can 
+    often be traced back to errors in the training data. Being able to discover the data examples that are the most 
+    likely culprits is a fundamental concern that has received a lot of attention recently. One prominent way to 
+    measure "data importance" with respect to model quality is the Shapley value. Unfortunately, existing methods 
+    only focus on the ML model in isolation, without considering the broader ML pipeline for data preparation and 
+    feature extraction, which appears in the majority of real-world ML code. This presents a major limitation to 
+    applying existing methods in practical settings. In this paper, we propose Datascope, a method for efficiently 
+    computing Shapley-based data importance over ML pipelines. We introduce several approximations that lead to 
+    dramatic improvements in terms of computational speed. Finally, our experimental evaluation demonstrates that 
+    our methods are capable of data error discovery that is as effective as existing Monte Carlo baselines, and in 
+    some cases even outperform them. We release our code as an open-source data debugging library.
+  year: 2024
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://openreview.net/forum?id=qxGXjWxabq
+    website: https://ease.ml/datascope
+    code: https://www.github.com/easeml/datascope
+  id: karlas2023data
+  thumbnail: /images/papers/karlas2023data.png
+  type: publication
+  venueLong: The Twelfth International Conference on Learning Representations
+  venueShort: ICLR
+  venueTrack: null
+  group: Debugging ML Pipelines
+  tag: ml-pipelines-debugging
+
+- bibTeX: "@inproceedings{wu2020complaint,
+    \ title={Complaint-driven training data debugging for query 2.0},
+    \ author={Wu, Weiyuan and Flokas, Lampros and Wu, Eugene and Wang, Jiannan},
+    \ booktitle={Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
+    \ pages={1317--1334},
+    \ year={2020}
+    \ }"
+  title: 'Complaint-Driven Training Data Debugging for Query 2.0'
+  authors:
+  - W Wu
+  - L Flokas
+  - E Wu
+  - J Wang
+  abstract: |
+    As the need for machine learning (ML) increases rapidly across all industry sectors, there is a significant 
+    interest among commercial database providers to support "Query 2.0", which integrates model inference into SQL 
+    queries. Debugging Query 2.0 is very challenging since an unexpected query result may be caused by the bugs in 
+    training data (e.g., wrong labels, corrupted features). In response, we propose Rain, a complaint-driven training 
+    data debugging system. Rain allows users to specify complaints over the query's intermediate or final output, 
+    and aims to return a minimum set of training examples so that if they were removed, the complaints would be 
+    resolved. To the best of our knowledge, we are the first to study this problem. A naive solution requires 
+    retraining an exponential number of ML models. We propose two novel heuristic approaches based on influence 
+    functions which both require linear retraining steps. We provide an in-depth analytical and empirical analysis 
+    of the two approaches and conduct extensive experiments to evaluate their effectiveness using four real-world 
+    datasets. Results show that Rain achieves the highest recall@k among all the baselines while still returns 
+    results interactively.
+  year: 2020
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://www2.cs.sfu.ca/~jnwang/papers/sigmod2020-rain-full-version.pdf
+  id: wu2020complaint
+  thumbnail: /images/papers/wu2020complaint.png
+  type: publication
+  venueLong: Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data
+  venueShort: SIGMOD
+  venueTrack: null
+  group: Debugging ML Pipelines
+  tag: ml-pipelines-debugging
+
+- bibTeX: "@inproceedings{flokas2022complaint,
+    \ title={Complaint-driven training data debugging at interactive speeds},
+    \ author={Flokas, Lampros and Wu, Weiyuan and Liu, Yejia and Wang, Jiannan and Verma, Nakul and Wu, Eugene},
+    \ booktitle={Proceedings of the 2022 International Conference on Management of Data},
+    \ pages={369--383},
+    \ year={2022}
+    \ }"
+  title: 'Complaint-Driven Training Data Debugging at Interactive Speeds'
+  authors:
+  - L Flokas
+  - W Wu
+  - Y Liu
+  - J Wang
+  - N Verma
+  - E Wu
+  abstract: |
+    Modern databases support queries that perform model inference (inference queries). Although powerful and 
+    widely used, inference queries are susceptible to incorrect results if the model is biased due to training 
+    data errors. Recently, prior work Rain proposed complaint-driven data debugging which uses user-specified 
+    errors in the output of inference queries (Complaints) to rank erroneous training examples that most likely 
+    caused the complaint. This can help users better interpret results and debug training sets. Rain combined 
+    influence analysis from the ML literature with relaxed query provenance polynomials from the DB literature to 
+    approximate the derivative of complaints w.r.t. training examples. Although effective, the runtime is O(|T|d), 
+    where T and d are the training set and model sizes, due to its reliance on the model's second order derivatives 
+    (the Hessian). On a Wide Resnet Network (WRN) model with 1.5 million parameters, it takes >1 minute to debug a 
+    complaint. We observe that most complaint debugging costs are independent of the complaint, and that modern 
+    models are overparameterized. In response, Rain++ uses precomputation techniques, based on non-trivial insights 
+    unique to data debugging, to reduce debugging latencies to a constant factor independent of model size. We also 
+    develop optimizations when the queried database is known apriori, and for standing queries over streaming 
+    databases. Combining these optimizations in Rain++ ensures interactive debugging latencies (~1ms) on models 
+    with millions of parameters.
+  year: 2022
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/pdf/10.1145/3514221.3517849
+  id: flokas2022complaint
+  thumbnail: /images/papers/flokas2022complaint.png
+  type: publication
+  venueLong: Proceedings of the 2022 International Conference on Management of Data
+  venueShort: SIGMOD
+  venueTrack: null
+  group: Debugging ML Pipelines
+  tag: ml-pipelines-debugging
+
+- bibTeX: "@article{grafberger2022data,
+    \ title={Data distribution debugging in machine learning pipelines},
+    \ author={Grafberger, Stefan and Groth, Paul and Stoyanovich, Julia and Schelter, Sebastian},
+    \ journal={The VLDB Journal},
+    \ volume={31},
+    \ number={5},
+    \ pages={1103--1126},
+    \ year={2022},
+    \ publisher={Springer}
+    \ }"
+  title: 'Data Distribution Debugging in Machine Learning Pipelines'
+  authors:
+  - S Grafberger
+  - P Groth
+  - J Stoyanovich
+  - S Schelter
+  abstract: |
+    Machine learning (ML) is increasingly used to automate impactful decisions, and the risks arising from this 
+    widespread use are garnering attention from policy makers, scientists, and the media. ML applications are 
+    often brittle with respect to their input data, which leads to concerns about their correctness, reliability, 
+    and fairness. In this paper, we describe mlinspect, a library that helps diagnose and mitigate technical bias 
+    that may arise during preprocessing steps in an ML pipeline. We refer to these problems collectively as data 
+    distribution bugs. The key idea is to extract a directed acyclic graph representation of the dataflow from a 
+    preprocessing pipeline and to use this representation to automatically instrument the code with predefined 
+    inspections. These inspections are based on a lightweight annotation propagation approach to propagate metadata 
+    such as lineage information from operator to operator. In contrast to existing work, mlinspect operates on 
+    declarative abstractions of popular data science libraries like estimator/transformer pipelines and does not 
+    require manual code instrumentation. We discuss the design and implementation of the mlinspect library and 
+    give a comprehensive end-to-end example that illustrates its functionality.
+  year: 2022
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://stefan-grafberger.com/mlinspect-journal.pdf
+    code: https://github.com/stefan-grafberger/mlinspect
+  id: grafberger2022data
+  thumbnail: /images/papers/grafberger2022data.png
+  type: publication
+  venueLong: The VLDB Journal
+  venueShort: VLDBJ
+  venueTrack: null
+  group: Debugging ML Pipelines
+  tag: ml-pipelines-debugging
+
+- bibTeX: "@article{karlas2020nearest,
+    \ author = {Karlaš, Bojan and Li, Peng and Wu, Renzhi and G\"{u}rel, Nezihe Merve and Chu, Xu and Wu, Wentao and Zhang, Ce},
+    \ title = {Nearest neighbor classifiers over incomplete information: from certain answers to certain predictions},
+    \ year = {2020},
+    \ issue_date = {November 2020},
+    \ publisher = {VLDB Endowment},
+    \ volume = {14},
+    \ number = {3},
+    \ issn = {2150-8097},
+    \ url = {https://doi.org/10.14778/3430915.3430917},
+    \ doi = {10.14778/3430915.3430917},
+    \ journal = {Proc. VLDB Endow.},
+    \ pages = {255-267},
+    \ numpages = {13}
+    \ }"
+  title: 'Nearest Neighbor Classifiers over Incomplete Information: From Certain Answers to Certain Predictions'
+  authors:
+  - B Karlaš
+  - P Li
+  - R Wu
+  - N Gurel
+  - X Chu
+  - W Wu
+  - C Zhang
+  abstract: |
+    Machine learning (ML) applications have been thriving recently, largely attributed to the increasing availability 
+    of data. However, inconsistency and incomplete information are ubiquitous in real-world datasets, and their impact 
+    on ML applications remains elusive. In this paper, we present a formal study of this impact by extending the 
+    notion of Certain Answers for Codd tables, which has been explored by the database research community for decades, 
+    into the field of machine learning. Specifically, we focus on classification problems and propose the notion of 
+    "Certain Predictions" (CP) - a test data example can be certainly predicted (CP'ed) if all possible classifiers 
+    trained on top of all possible worlds induced by the incompleteness of data would yield the same prediction. We 
+    study two fundamental CP queries: (Q1) checking query that determines whether a data example can be CP'ed; and 
+    (Q2) counting query that computes the number of classifiers that support a particular prediction (i.e., label). 
+    Given that general solutions to CP queries are, not surprisingly, hard without assumption over the type of 
+    classifier, we further present a case study in the context of nearest neighbor (NN) classifiers, where efficient 
+    solutions to CP queries can be developed - we show that it is possible to answer both queries in linear or 
+    polynomial time over exponentially many possible worlds. We demonstrate one example use case of CP in the 
+    important application of "data cleaning for machine learning (DC for ML)." We show that our proposed CPClean 
+    approach built based on CP can often significantly outperform existing techniques, particularly on datasets with 
+    systematic missing values. For example, on 5 datasets with systematic missingness, CPClean (with early termination) 
+    closes 100% gap on average by cleaning 36% of dirty data on average, while the best automatic cleaning approach 
+    BoostClean can only close 14% gap on average.
+  year: 2020
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/b/1653/files/2021/02/CPClean_VLDB2021.pdf
+  id: karlas2020nearest
+  thumbnail: /images/papers/karlas2020nearest.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: PVLDB
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@inproceedings{meyer2023dataset,
+    \ title={The dataset multiplicity problem: How unreliable data impacts predictions},
+    \ author={Meyer, Anna P and Albarghouthi, Aws and D'Antoni, Loris},
+    \ booktitle={Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency},
+    \ pages={193--204},
+    \ year={2023}
+    \ }"
+  title: 'The Dataset Multiplicity Problem: How Unreliable Data Impacts Predictions'
+  authors:
+  - AP Meyer
+  - A Albarghouthi
+  - L D'Antoni
+  abstract: |
+    We introduce dataset multiplicity, a way to study how inaccuracies, uncertainty, and social bias in training 
+    datasets impact test-time predictions. The dataset multiplicity framework asks a counterfactual question of what 
+    the set of resultant models (and associated test-time predictions) would be if we could somehow access all 
+    hypothetical, unbiased versions of the dataset. We discuss how to use this framework to encapsulate various 
+    sources of uncertainty in datasets’ factualness, including systemic social bias, data collection practices, 
+    and noisy labels or features. We show how to exactly analyze the impacts of dataset multiplicity for a specific 
+    model architecture and type of uncertainty: linear models with label errors. Our empirical analysis shows that 
+    real-world datasets, under reasonable assumptions, contain many test samples whose predictions are affected by 
+    dataset multiplicity. Furthermore, the choice of domain-specific dataset multiplicity definition determines what 
+    samples are affected, and whether different demographic groups are disparately impacted. Finally, we discuss 
+    implications of dataset multiplicity for machine learning practice and research, including considerations for 
+    when model outcomes should not be trusted.
+  year: 2023
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3593013.3593988
+  id: meyer2023dataset
+  thumbnail: /images/papers/meyer2023dataset.png
+  type: publication
+  venueLong: Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency
+  venueShort: FAccT
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@article{zhen2024certain,
+    \ title={Certain and Approximately Certain Models for Statistical Learning},
+    \ author={Zhen, Cheng and Aryal, Nischal and Termehchy, Arash and Chabada, Amandeep Singh},
+    \ journal={Proceedings of the ACM on Management of Data},
+    \ volume={2},
+    \ number={3},
+    \ pages={1--25},
+    \ year={2024},
+    \ publisher={ACM New York, NY, USA}
+    \ }"
+  title: 'Certain and Approximately Certain Models for Statistical Learning'
+  authors:
+  - C Zhen
+  - N Aryal
+  - A Termehchy
+  - A Chabada
+  abstract: |
+    Real-world data is often incomplete and contains missing values. To train accurate models over real-world 
+    datasets, users need to spend a substantial amount of time and resources imputing and finding proper values for 
+    missing data items. In this paper, we demonstrate that it is possible to learn accurate models directly from 
+    data with missing values for certain training data and target models. We propose a unified approach for checking 
+    the necessity of data imputation to learn accurate models across various widely-used machine learning paradigms. 
+    We build efficient algorithms with theoretical guarantees to check this necessity and return accurate models in 
+    cases where imputation is unnecessary. Our extensive experiments indicate that our proposed algorithms 
+    significantly reduce the amount of time and effort needed for data imputation without imposing considerable 
+    computational overhead.
+  year: 2024
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3654929
+  id: zhen2024certain
+  thumbnail: /images/papers/zhen2024certain.png
+  type: publication
+  venueLong: Proceedings of the ACM on Management of Data
+  venueShort: PACMMOD
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@article{meyer2021certifying,
+    \ title={Certifying robustness to programmable data bias in decision trees},
+    \ author={Meyer, Anna and Albarghouthi, Aws and D'Antoni, Loris},
+    \ journal={Advances in Neural Information Processing Systems},
+    \ volume={34},
+    \ pages={26276--26288},
+    \ year={2021}
+    \ }"
+  title: 'Certifying Robustness to Programmable Data Bias in Decision Trees'
+  authors:
+  - A Meyer
+  - A Albarghouthi
+  - L D'Antoni
+  abstract: |
+    Datasets can be biased due to societal inequities, human biases, under-representation of minorities, etc. 
+    Our goal is to certify that models produced by a learning algorithm are pointwise-robust to dataset biases. 
+    This is a challenging problem: it entails learning models for a large, or even infinite, number of datasets, 
+    ensuring that they all produce the same prediction. We focus on decision-tree learning due to the interpretable 
+    nature of the models. Our approach allows programmatically specifying \emph{bias models} across a variety of 
+    dimensions (e.g., label-flipping or missing data), composing types of bias, and targeting bias towards a 
+    specific group. To certify robustness, we use a novel symbolic technique to evaluate a decision-tree learner 
+    on a large, or infinite, number of datasets, certifying that each and every dataset produces the same prediction 
+    for a specific test point. We evaluate our approach on datasets that are commonly used in the fairness 
+    literature, and demonstrate our approach's viability on a range of bias models.
+  year: 2021
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://proceedings.neurips.cc/paper/2021/hash/dcf531edc9b229acfe0f4b87e1e278dd-Abstract.html
+  id: meyer2021certifying
+  thumbnail: /images/papers/meyer2021certifying.png
+  type: publication
+  venueLong: Advances in Neural Information Processing Systems
+  venueShort: NeurIPS
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@article{zhu2023consistent,
+    \ title={Consistent Range Approximation for Fair Predictive Modeling},
+    \ author={Zhu, Jiongli and Galhotra, Sainyam and Sabri, Nazanin and Salimi, Babak},
+    \ journal={Proceedings of the VLDB Endowment},
+    \ volume={16},
+    \ number={11},
+    \ pages={2925--2938},
+    \ year={2023},
+    \ publisher={VLDB Endowment}
+    \ }"
+  title: 'Consistent Range Approximation for Fair Predictive Modeling'
+  authors:
+  - J Zhu
+  - S Galhotra
+  - N Sabri
+  - B Salimi
+  abstract: |
+    This paper proposes a novel framework for certifying the fairness of predictive models trained on biased data. 
+    It draws from query answering for incomplete and inconsistent databases to formulate the problem of consistent 
+    range approximation (CRA) of fairness queries for a predictive model on a target population. The framework 
+    employs background knowledge of the data collection process and biased data, working with or without limited 
+    statistics about the target population, to compute a range of answers for fairness queries. Using CRA, the 
+    framework builds predictive models that are certifiably fair on the target population, regardless of the 
+    availability of external data during training. The framework's efficacy is demonstrated through evaluations 
+    on real data, showing substantial improvement over existing state-of-the-art methods.
+  year: 2023
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://www.vldb.org/pvldb/vol16/p2925-zhu.pdf
+  id: zhu2023consistent
+  thumbnail: /images/papers/zhu2023consistent.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: VLDB
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@inproceedings{zhu2024learning,
+    \ title={Learning from Uncertain Data: From Possible Worlds to Possible Models},
+    \ author={Zhu, Jiongli and Feng, Su and Glavic, Boris and Salimi, Babak},
+    \ booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
+    \ year={2024},
+    \ }"
+  title: 'Learning from Uncertain Data: From Possible Worlds to Possible Models'
+  authors:
+  - J Zhu
+  - S Feng
+  - B Glavic
+  - B Salimi
+  abstract: |
+    We introduce an efficient method for learning linear models from uncertain data, where uncertainty is 
+    represented as a set of possible variations in the data, leading to predictive multiplicity. Our approach 
+    leverages abstract interpretation and zonotopes, a type of convex polytope, to compactly represent these 
+    dataset variations, enabling the symbolic execution of gradient descent on all possible worlds simultaneously. 
+    We develop techniques to ensure that this process converges to a fixed point and derive closed-form solutions 
+    for this fixed point. Our method provides sound over-approximations of all possible optimal models and viable 
+    prediction ranges. We demonstrate the effectiveness of our approach through theoretical and empirical analysis, 
+    highlighting its potential to reason about model and prediction uncertainty due to data quality issues in 
+    training data.
+  year: 2024
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://openreview.net/forum?id=v9RqRFSLQ2
+  id: zhu2024learning
+  thumbnail: /images/papers/zhu2024learning.png
+  type: publication
+  venueLong: Advances in Neural Information Processing Systems
+  venueShort: NeurIPS
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+

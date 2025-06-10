@@ -1,0 +1,249 @@
+- bibTeX: "@article{karlas2020nearest,
+    \ author = {Karlaš, Bojan and Li, Peng and Wu, Renzhi and G\"{u}rel, Nezihe Merve and Chu, Xu and Wu, Wentao and Zhang, Ce},
+    \ title = {Nearest neighbor classifiers over incomplete information: from certain answers to certain predictions},
+    \ year = {2020},
+    \ issue_date = {November 2020},
+    \ publisher = {VLDB Endowment},
+    \ volume = {14},
+    \ number = {3},
+    \ issn = {2150-8097},
+    \ url = {https://doi.org/10.14778/3430915.3430917},
+    \ doi = {10.14778/3430915.3430917},
+    \ journal = {Proc. VLDB Endow.},
+    \ pages = {255-267},
+    \ numpages = {13}
+    \ }"
+  title: 'Nearest Neighbor Classifiers over Incomplete Information: From Certain Answers to Certain Predictions'
+  authors:
+  - B Karlaš
+  - P Li
+  - R Wu
+  - N Gurel
+  - X Chu
+  - W Wu
+  - C Zhang
+  abstract: |
+    Machine learning (ML) applications have been thriving recently, largely attributed to the increasing availability 
+    of data. However, inconsistency and incomplete information are ubiquitous in real-world datasets, and their impact 
+    on ML applications remains elusive. In this paper, we present a formal study of this impact by extending the 
+    notion of Certain Answers for Codd tables, which has been explored by the database research community for decades, 
+    into the field of machine learning. Specifically, we focus on classification problems and propose the notion of 
+    "Certain Predictions" (CP) - a test data example can be certainly predicted (CP'ed) if all possible classifiers 
+    trained on top of all possible worlds induced by the incompleteness of data would yield the same prediction. We 
+    study two fundamental CP queries: (Q1) checking query that determines whether a data example can be CP'ed; and 
+    (Q2) counting query that computes the number of classifiers that support a particular prediction (i.e., label). 
+    Given that general solutions to CP queries are, not surprisingly, hard without assumption over the type of 
+    classifier, we further present a case study in the context of nearest neighbor (NN) classifiers, where efficient 
+    solutions to CP queries can be developed - we show that it is possible to answer both queries in linear or 
+    polynomial time over exponentially many possible worlds. We demonstrate one example use case of CP in the 
+    important application of "data cleaning for machine learning (DC for ML)." We show that our proposed CPClean 
+    approach built based on CP can often significantly outperform existing techniques, particularly on datasets with 
+    systematic missing values. For example, on 5 datasets with systematic missingness, CPClean (with early termination) 
+    closes 100% gap on average by cleaning 36% of dirty data on average, while the best automatic cleaning approach 
+    BoostClean can only close 14% gap on average.
+  year: 2020
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/b/1653/files/2021/02/CPClean_VLDB2021.pdf
+  id: karlas2020nearest
+  thumbnail: /images/papers/karlas2020nearest.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: PVLDB
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@inproceedings{meyer2023dataset,
+    \ title={The dataset multiplicity problem: How unreliable data impacts predictions},
+    \ author={Meyer, Anna P and Albarghouthi, Aws and D'Antoni, Loris},
+    \ booktitle={Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency},
+    \ pages={193--204},
+    \ year={2023}
+    \ }"
+  title: 'The Dataset Multiplicity Problem: How Unreliable Data Impacts Predictions'
+  authors:
+  - AP Meyer
+  - A Albarghouthi
+  - L D'Antoni
+  abstract: |
+    We introduce dataset multiplicity, a way to study how inaccuracies, uncertainty, and social bias in training 
+    datasets impact test-time predictions. The dataset multiplicity framework asks a counterfactual question of what 
+    the set of resultant models (and associated test-time predictions) would be if we could somehow access all 
+    hypothetical, unbiased versions of the dataset. We discuss how to use this framework to encapsulate various 
+    sources of uncertainty in datasets’ factualness, including systemic social bias, data collection practices, 
+    and noisy labels or features. We show how to exactly analyze the impacts of dataset multiplicity for a specific 
+    model architecture and type of uncertainty: linear models with label errors. Our empirical analysis shows that 
+    real-world datasets, under reasonable assumptions, contain many test samples whose predictions are affected by 
+    dataset multiplicity. Furthermore, the choice of domain-specific dataset multiplicity definition determines what 
+    samples are affected, and whether different demographic groups are disparately impacted. Finally, we discuss 
+    implications of dataset multiplicity for machine learning practice and research, including considerations for 
+    when model outcomes should not be trusted.
+  year: 2023
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3593013.3593988
+  id: meyer2023dataset
+  thumbnail: /images/papers/meyer2023dataset.png
+  type: publication
+  venueLong: Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency
+  venueShort: FAccT
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@article{zhen2024certain,
+    \ title={Certain and Approximately Certain Models for Statistical Learning},
+    \ author={Zhen, Cheng and Aryal, Nischal and Termehchy, Arash and Chabada, Amandeep Singh},
+    \ journal={Proceedings of the ACM on Management of Data},
+    \ volume={2},
+    \ number={3},
+    \ pages={1--25},
+    \ year={2024},
+    \ publisher={ACM New York, NY, USA}
+    \ }"
+  title: 'Certain and Approximately Certain Models for Statistical Learning'
+  authors:
+  - C Zhen
+  - N Aryal
+  - A Termehchy
+  - A Chabada
+  abstract: |
+    Real-world data is often incomplete and contains missing values. To train accurate models over real-world 
+    datasets, users need to spend a substantial amount of time and resources imputing and finding proper values for 
+    missing data items. In this paper, we demonstrate that it is possible to learn accurate models directly from 
+    data with missing values for certain training data and target models. We propose a unified approach for checking 
+    the necessity of data imputation to learn accurate models across various widely-used machine learning paradigms. 
+    We build efficient algorithms with theoretical guarantees to check this necessity and return accurate models in 
+    cases where imputation is unnecessary. Our extensive experiments indicate that our proposed algorithms 
+    significantly reduce the amount of time and effort needed for data imputation without imposing considerable 
+    computational overhead.
+  year: 2024
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://dl.acm.org/doi/abs/10.1145/3654929
+  id: zhen2024certain
+  thumbnail: /images/papers/zhen2024certain.png
+  type: publication
+  venueLong: Proceedings of the ACM on Management of Data
+  venueShort: PACMMOD
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@article{meyer2021certifying,
+    \ title={Certifying robustness to programmable data bias in decision trees},
+    \ author={Meyer, Anna and Albarghouthi, Aws and D'Antoni, Loris},
+    \ journal={Advances in Neural Information Processing Systems},
+    \ volume={34},
+    \ pages={26276--26288},
+    \ year={2021}
+    \ }"
+  title: 'Certifying Robustness to Programmable Data Bias in Decision Trees'
+  authors:
+  - A Meyer
+  - A Albarghouthi
+  - L D'Antoni
+  abstract: |
+    Datasets can be biased due to societal inequities, human biases, under-representation of minorities, etc. 
+    Our goal is to certify that models produced by a learning algorithm are pointwise-robust to dataset biases. 
+    This is a challenging problem: it entails learning models for a large, or even infinite, number of datasets, 
+    ensuring that they all produce the same prediction. We focus on decision-tree learning due to the interpretable 
+    nature of the models. Our approach allows programmatically specifying \emph{bias models} across a variety of 
+    dimensions (e.g., label-flipping or missing data), composing types of bias, and targeting bias towards a 
+    specific group. To certify robustness, we use a novel symbolic technique to evaluate a decision-tree learner 
+    on a large, or infinite, number of datasets, certifying that each and every dataset produces the same prediction 
+    for a specific test point. We evaluate our approach on datasets that are commonly used in the fairness 
+    literature, and demonstrate our approach's viability on a range of bias models.
+  year: 2021
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://proceedings.neurips.cc/paper/2021/hash/dcf531edc9b229acfe0f4b87e1e278dd-Abstract.html
+  id: meyer2021certifying
+  thumbnail: /images/papers/meyer2021certifying.png
+  type: publication
+  venueLong: Advances in Neural Information Processing Systems
+  venueShort: NeurIPS
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@article{zhu2023consistent,
+    \ title={Consistent Range Approximation for Fair Predictive Modeling},
+    \ author={Zhu, Jiongli and Galhotra, Sainyam and Sabri, Nazanin and Salimi, Babak},
+    \ journal={Proceedings of the VLDB Endowment},
+    \ volume={16},
+    \ number={11},
+    \ pages={2925--2938},
+    \ year={2023},
+    \ publisher={VLDB Endowment}
+    \ }"
+  title: 'Consistent Range Approximation for Fair Predictive Modeling'
+  authors:
+  - J Zhu
+  - S Galhotra
+  - N Sabri
+  - B Salimi
+  abstract: |
+    This paper proposes a novel framework for certifying the fairness of predictive models trained on biased data. 
+    It draws from query answering for incomplete and inconsistent databases to formulate the problem of consistent 
+    range approximation (CRA) of fairness queries for a predictive model on a target population. The framework 
+    employs background knowledge of the data collection process and biased data, working with or without limited 
+    statistics about the target population, to compute a range of answers for fairness queries. Using CRA, the 
+    framework builds predictive models that are certifiably fair on the target population, regardless of the 
+    availability of external data during training. The framework's efficacy is demonstrated through evaluations 
+    on real data, showing substantial improvement over existing state-of-the-art methods.
+  year: 2023
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://www.vldb.org/pvldb/vol16/p2925-zhu.pdf
+  id: zhu2023consistent
+  thumbnail: /images/papers/zhu2023consistent.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: VLDB
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
+- bibTeX: "@inproceedings{zhu2024learning,
+    \ title={Learning from Uncertain Data: From Possible Worlds to Possible Models},
+    \ author={Zhu, Jiongli and Feng, Su and Glavic, Boris and Salimi, Babak},
+    \ booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
+    \ year={2024},
+    \ }"
+  title: 'Learning from Uncertain Data: From Possible Worlds to Possible Models'
+  authors:
+  - J Zhu
+  - S Feng
+  - B Glavic
+  - B Salimi
+  abstract: |
+    We introduce an efficient method for learning linear models from uncertain data, where uncertainty is 
+    represented as a set of possible variations in the data, leading to predictive multiplicity. Our approach 
+    leverages abstract interpretation and zonotopes, a type of convex polytope, to compactly represent these 
+    dataset variations, enabling the symbolic execution of gradient descent on all possible worlds simultaneously. 
+    We develop techniques to ensure that this process converges to a fixed point and derive closed-form solutions 
+    for this fixed point. Our method provides sound over-approximations of all possible optimal models and viable 
+    prediction ranges. We demonstrate the effectiveness of our approach through theoretical and empirical analysis, 
+    highlighting its potential to reason about model and prediction uncertainty due to data quality issues in 
+    training data.
+  year: 2024
+  entryType: inproceedings
+  firstPage: 1
+  links:
+    paper: https://openreview.net/forum?id=v9RqRFSLQ2
+  id: zhu2024learning
+  thumbnail: /images/papers/zhu2024learning.png
+  type: publication
+  venueLong: Advances in Neural Information Processing Systems
+  venueShort: NeurIPS
+  venueTrack: null
+  group: Managing Uncertainty for ML
+  tag: uncertain-data-methods
+
