@@ -3,3 +3,13 @@ languageCode = "en-us"
 title = "SIGMOD 2025 Tutorial: Navigating Data Errors in Machine Learning Pipelines: Identify, Debug, and Learn"
 theme = "cotton-sky"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+[params]
+  math = true
