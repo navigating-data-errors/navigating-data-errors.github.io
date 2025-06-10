@@ -46,7 +46,7 @@ links:
     large: true
     label: Paper
   - icon: fa-solid fa-file-powerpoint
-    href: static/navigating-data-errors-review-slides.pdf
+    href: pdf/navigating-data-errors-review-slides.pdf
     large: true
     label: Slides
   - icon: fa-solid fa-laptop-code
