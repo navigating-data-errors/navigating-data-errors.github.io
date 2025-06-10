@@ -4,9 +4,7 @@ subtitle: by Sebastian Schelter
 thumbnail: images/debug-ml-pipelines.png
 order: 2
 summary: |
-    When it comes to data preparation, data cleaning is often an essential yet quite costly task.
-    If we are given a fixed cleaning budget, the challenge is to find the training data examples that would would bring the
-    biggest positive impact on model performance if we were to clean them.
+    Real-world ML applications involve complex pipelines which include steps for data ingestion and pre-processing, as well as model querying and management. While data errors typically originate in early stages, they can often only be observed in later stages, which brings a new set of challenges. In this part, we provide an overview of systems for building machine learning pipelines, review some work that studies their properties, and outline several methods for debugging them.
 sections:
     - partial: content
     - title: References
