@@ -3,7 +3,7 @@ layout: list
 title: "Navigating Data Errors in Machine Learning Pipelines"
 subtitle: SIGMOD 2025 Tutorial / Friday, June 27th, 9 AM
 summary: |
-    Unerliable behavior of machine learning (ML) pipelines is often caused by errors present in the training data. In recent years, the research community has made significant progress in developing holistic approaches to identify the most harmful data errors, prioritize impactful repairs, and reason about their effects when errors cannot be fully resolved. This tutorial surveys prominent work in this area and introduces practical tools designed to address data quality issues across the ML development lifecycle.
+    Unreliable behavior of machine learning (ML) pipelines is often caused by errors present in the training data. In recent years, the research community has made significant progress in developing holistic approaches to identify the most harmful data errors, prioritize impactful repairs, and reason about their effects when errors cannot be fully resolved. This tutorial surveys prominent work in this area and introduces practical tools designed to address data quality issues across the ML development lifecycle.
 # jsonld:
 #   type: ResearchProject
 #   name: ease.ml
