@@ -701,6 +701,49 @@
   groups: Frameworks for Building ML Pipelines
   tag: ml-pipelines-general
 
+- bibTeX: "@article{phani2022uplift,
+    \ title={UPLIFT: parallelization strategies for feature transformations in machine learning workloads},
+    \ author={Phani, Arnab and Erlbacher, Lukas and Boehm, Matthias},
+    \ journal={Proceedings of the VLDB Endowment},
+    \ volume={15},
+    \ number={11},
+    \ pages={2929--2938},
+    \ year={2022},
+    \ publisher={VLDB Endowment}
+    \ }"
+  title: 'UPLIFT: Parallelization Strategies for Feature Transformations in Machine Learning Workloads'
+  authors:
+  - A Phani
+  - L Erlbacher
+  - M Boehm
+  abstract: |
+    Data science pipelines are typically exploratory. An integral task of such pipelines are feature transformations, 
+    which transform raw data into numerical matrices or tensors for training or scoring. There exist a wide variety 
+    of transformations for different data modalities. These feature transformations incur large computational 
+    overhead due to expensive string processing and dictionary creation. Existing ML systems address this overhead 
+    by static parallelization schemes and interleaving transformations with model training. These approaches show 
+    good performance improvements for simple transformations, but struggle to handle different data characteristics 
+    (many features/distinct items) and multi-pass transformations. A key observation is that good parallelization 
+    strategies for feature transformations depend on data characteristics. In this paper, we introduce UPLIFT, a 
+    framework for ParalleLIzing Feature Transformations. UPLIFT constructs a fine-grained task graph for a set of 
+    transformations, optimizes the plan according to data characteristics, and executes this plan in a cache-conscious 
+    manner. We show that the resulting framework is applicable to a wide range of transformations. Furthermore, we 
+    propose the FTBench benchmark with transformations and datasets from various domains. On this benchmark, UPLIFT 
+    yields speedups of up to 31.6x (9.27x on average) compared to state-of-the-art ML systems.
+  year: 2022
+  entryType: article
+  firstPage: 1
+  links:
+    paper: https://www.vldb.org/pvldb/vol15/p2929-phani.pdf
+  id: phani2022uplift
+  thumbnail: /images/papers/phani2022uplift.png
+  type: publication
+  venueLong: Proceedings of the VLDB Endowment
+  venueShort: VLDB
+  venueTrack: null
+  groups: Frameworks for Building ML Pipelines
+  tag: ml-pipelines-general
+
 - bibTeX: "@inproceedings{xin2021production,
     \ title={Production machine learning pipelines: Empirical analysis and optimization opportunities},
     \ author={Xin, Doris and Miao, Hui and Parameswaran, Aditya and Polyzotis, Neoklis},
